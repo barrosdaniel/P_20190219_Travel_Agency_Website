@@ -5,3 +5,7 @@
   border: 3px solid #f4f4f4 !important;
   box-shadow: none !important;
 }
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
