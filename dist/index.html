@@ -205,56 +205,56 @@
 
   <!-- Gallery section
     ====================================================================== -->
-  <section id="gallery" class="section section-gallery scroolspy">
+  <section id="gallery" class="section section-gallery scrollspy">
     <div class="container">
       <h4 class="center"><span class="cyan-text">Photo</span> Gallery</h4>
       <!-- First row -->
       <div class="row">
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?London" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?travel" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Paris" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?nature" alt="" class="material-boxed responsive-img" />
-        </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beach,travel" alt=""
+          <img src="https://source.unsplash.com/1600x900/?Barcelona" alt=""
             class="material-boxed responsive-img" />
+        </div>
+        <div class="col s12 m3">
+          <img src="https://source.unsplash.com/1600x900/?Dubai" alt="" class="material-boxed responsive-img" />
         </div>
       </div>
       <!-- Second row -->
       <div class="row">
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?beaches" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Bangkok" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?travelling" alt=""
-            class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Tokyo" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?bridge" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Sydney" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?travel,boat" alt=""
+          <img src="https://source.unsplash.com/1600x900/?Polynesia" alt=""
             class="material-boxed responsive-img" />
         </div>
       </div>
       <!-- Third row -->
       <div class="row">
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?water" alt="" class="material-boxed responsive-img" />
-        </div>
-        <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?building" alt=""
+          <img src="https://source.unsplash.com/1600x900/?New York" alt=""
             class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?trees" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Bahamas" alt="" class="material-boxed responsive-img" />
         </div>
         <div class="col s12 m3">
-          <img src="https://source.unsplash.com/1600x900/?cruise" alt="" class="material-boxed responsive-img" />
+          <img src="https://source.unsplash.com/1600x900/?Cairo" alt="" class="material-boxed responsive-img" />
+        </div>
+        <div class="col s12 m3">
+          <img src="https://source.unsplash.com/1600x900/?Rio,de,Janeiro" alt=""
+            class="material-boxed responsive-img" />
         </div>
       </div>
     </div>
@@ -308,6 +308,13 @@
     </div>
   </section>
 
+  <!-- Contact section
+    ====================================================================== -->
+  <footer class="section cyan darken-2 white-text center">
+    <p>&copy; Travelville and contributors <span id="year"></span>. ABN 88 888
+      888 888</p>
+  </footer>
+
   <!--JavaScript at end of body for optimized loading-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
@@ -341,6 +348,13 @@
     // Initialise material-boxed
     const mb = document.querySelectorAll(".material-boxed");
     M.Materialbox.init(mb, {});
+
+    // Initialise scrollspy
+    const ss = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(ss, {});
+
+    // Replace year for the copyright with current year
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 
